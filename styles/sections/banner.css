@@ -1,0 +1,55 @@
+
+.main-banner-img {
+    width: 100%;
+    height: 50%;
+}
+.main-banner-header {
+    position: absolute;
+    top: 60px;
+    left: 150px;
+    font-family: var(--header-font);
+    font-size: 1.4rem;
+}
+@media screen and (min-width: 568px){
+    .main-banner-header {
+        top: 100px;
+        left: 100px;
+        font-size: 2.2rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .main-banner-header {
+        top: 88px;
+        left: 125px;
+        font-size: 3rem;
+    }
+    .main-banner-img {
+        height: 45vh;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
+@media screen and (min-width: 1024px){
+    .main-banner-header {
+        top: calc(129px - 1vw);
+        left: 58px;
+        font-size: 3.4rem;
+    }
+    .main-banner-img {
+        height: 40vh;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}
+@media screen and (min-width: 1200px){
+    .main-banner-header {
+        top: calc(173px - 1vw);
+        left: 120px;
+        font-size: calc(3.4rem + 1vw);
+    }
+    .main-banner-img {
+        height: 50vh;
+        object-fit: cover;
+        object-position: bottom;
+    }
+}

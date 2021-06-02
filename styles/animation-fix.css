@@ -1,0 +1,3 @@
+.animation-fix * {
+  transition: none !important;
+}     

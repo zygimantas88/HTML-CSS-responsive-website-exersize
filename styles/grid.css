@@ -1,0 +1,232 @@
+.img1 {
+    grid-area: img1-start / img1-start / img1-end / img1-end;
+}
+.img2 {
+    grid-area: img2-start / img2-start / img2-end / img2-end;
+}
+.img3 {
+    grid-area: img3-start / img3-start / img3-end / img3-end;
+}
+.img4 {
+    grid-area: img4-start / img4-start / img4-end / img4-end;
+}
+.img5 {
+    grid-area: img5-start / img5-start / img5-end / img5-end;
+}
+.img6 {
+    grid-area: img6-start / img6-start / img6-end / img6-end;
+}
+
+.text1 {
+    grid-area: text1-start / text1-start / text1-end / text1-end;
+}
+.text2 {
+    grid-area: text2-start / text2-start / text2-end / text2-end;
+}
+.text3 {
+    grid-area: text3-start / text3-start / text3-end / text3-end;
+}
+.text4 {
+    grid-area: text4-start / text4-start / text4-end / text4-end;
+}
+.text5 {
+    grid-area: text5-start / text5-start / text5-end / text5-end;
+}
+.text6 {
+    grid-area: text6-start / text6-start / text6-end / text6-end;
+}
+
+.gal1 {
+    grid-area: gal1-start / gal1-start / gal1-end / gal1-end;
+}
+.gal2 {
+    grid-area: gal2-start / gal2-start / gal2-end / gal2-end;
+}
+.gal3 {
+    grid-area: gal3-start / gal3-start / gal3-end / gal3-end;
+}
+.gal4 {
+    grid-area: gal4-start / gal4-start / gal4-end / gal4-end;
+}
+.gal5 {
+    grid-area: gal5-start / gal5-start / gal5-end / gal5-end;
+}
+.gal6 {
+    grid-area: gal6-start / gal6-start / gal6-end / gal6-end;
+}
+
+.btn1 {
+    grid-area: btn1-start / btn1-start / btn1-end / btn1-end;
+}
+.btn2 {
+    grid-area: btn2-start / btn2-start / btn2-end / btn2-end;
+}
+.btn3 {
+    grid-area: btn3-start / btn3-start / btn3-end / btn3-end;
+}
+.btn4 {
+    grid-area: btn4-start / btn4-start / btn4-end / btn4-end;
+}
+.btn5 {
+    grid-area: btn5-start / btn5-start / btn5-end / btn5-end;
+}
+.btn6 {
+    grid-area: btn6-start / btn6-start / btn6-end / btn6-end;
+}
+
+.page-grid {
+    height: 100%;
+    display: grid;
+    gap: 5px 0;
+    grid-template-columns: 
+    [btn1-start btn2-start btn3-start btn4-start btn5-start btn6-start ] 
+    10% 
+    [btn1-end btn2-end btn3-end btn4-end btn5-end btn6-end img1-start img2-start img3-start img4-start img5-start img6-start]
+    35%
+    [img1-end img2-end img3-end img4-end img5-end img6-end text1-start text2-start text3-start text4-start text5-start text6-start]
+    55%
+    [text1-end text2-end text3-end text4-end text5-end text6-end]
+    ;
+
+    grid-template-rows:
+    [btn1-start img1-start text1-start] 
+    auto
+    [btn1-end img1-end text1-end btn2-start img2-start text2-start ]
+    auto
+    [btn2-end img2-end text2-end btn3-start img3-start text3-start] 
+    auto
+    [btn3-end img3-end text3-end btn4-start img4-start text4-start] 
+    auto
+    [btn4-end img4-end text4-end btn5-start img5-start text5-start]
+    auto
+    [btn5-end img5-end text5-end btn6-start img6-start text6-start]
+    auto
+    [btn6-end img6-end text6-end]
+    ;
+}
+
+@media screen and (min-width: 568px) {
+    .page-grid {
+        grid-template-columns: 
+        [btn1-start btn2-start btn3-start] 
+        3.5% 
+        [btn1-end btn2-end btn3-end img1-start img2-start img3-start]
+        20%
+        [img1-end img2-end img3-end text1-start text2-start text3-start]
+        26.5%
+        [text1-end text2-end text3-end btn4-start btn5-start btn6-start]
+        3.5%
+        [btn4-end btn5-end btn6-end img4-start img5-start img6-start ]
+        20%
+        [img4-end img5-end img6-end text4-start text5-start text6-start]
+        26.5%
+        [text4-end text5-end text6-end]
+        ;
+        grid-template-rows:
+        [btn1-start img1-start text1-start btn4-start img4-start text4-start] 
+        auto
+        [btn1-end img1-end text1-end btn4-end img4-end text4-end btn2-start img2-start text2-start btn5-start img5-start text5-start]
+        auto
+        [btn2-end img2-end text2-end btn5-end img5-end text5-end btn3-start img3-start text3-start btn6-start img6-start text6-start] 
+        auto
+        [btn3-end img3-end text3-end btn6-end img6-end text6-end] 
+        ;
+    }
+}
+@media screen and (min-width: 768px) {
+    .page-grid {
+        grid-template-columns: 
+        [img1-start gal2-start img3-start] 
+        17% 
+        [gal2-end text2-start]
+        33%
+        [img1-end text2-end img3-end text1-start img2-start text3-start]
+        33%
+        [text1-end text3-end gal1-start gal3-start]
+        17%
+        [gal1-end img2-end gal3-end]
+        ;
+    
+        grid-template-rows:
+        [img1-start text1-start gal1-start] 
+        37vh
+        [img1-end text1-end gal1-end gal2-start text2-start img2-start] 
+        37vh
+        [gal2-end text2-end img2-end img3-start text3-start gal3-start] 
+        37vh
+        [img3-end text3-end gal3-end] 
+        ;
+        
+        gap: 0 0;
+    }
+
+}
+@media screen and (min-width: 1024px) {
+    .page-grid {
+            grid-template-columns: 
+            [gal1-start img1-start gal4-start img4-start] 
+            10.3% 
+            [gal1-end text1-start gal4-end text4-start]
+            23%
+            [text1-end img1-end img2-start gal2-start text4-end img4-end img5-start gal5-start]
+            10.3%
+            [gal2-end text2-start gal5-end text5-start]
+            23%
+            [img2-end text2-end text3-start img3-start img5-end text5-end text6-start img6-start]
+            23%
+            [text3-end gal3-start text6-end gal6-start]
+            10.3%
+            [gal3-end img3-end gal6-end img6-end]
+            ;
+        
+            grid-template-rows:
+            [gal1-start text1-start img2-start text3-start gal3-start] 
+            35vh
+            [gal1-end text1-end img2-end text3-end gal3-end img1-start gal2-start text2-start img3-start] 
+            35vh
+            [img1-end gal2-end text2-end img3-end gal4-start text4-start img5-start text6-start gal6-start]
+            35vh
+            [gal4-end text4-end img5-end text6-end gal6-end img4-start gal5-start text5-start img6-start]
+            35vh
+            [img4-end gal5-end text5-end img6-end]
+            ;
+            
+        }
+
+}
+
+@media screen and (min-width: 1200px) {
+    .page-grid {
+        grid-template-columns: 
+        [img1-start gal2-start img3-start] 
+        8.5% 
+        [gal2-end text2-start]
+        16.5%
+        [img1-end text2-end img3-end text1-start img2-start text3-start]
+        16.5%
+        [text1-end text3-end gal1-start gal3-start]
+        8.5%
+        [gal1-end img2-end gal3-end img4-start gal5-start img6-start]
+        8.5% 
+        [gal5-end text5-start]
+        16.5%
+        [img4-end text5-end img6-end text4-start img5-start text6-start]
+        16.5%
+        [text4-end text6-end gal4-start gal6-start]
+        8.5%
+        [gal4-end img5-end gal6-end]
+
+        ;
+    
+        grid-template-rows:
+        [img1-start text1-start gal1-start img4-start text4-start gal4-start] 
+        37vh
+        [img1-end text1-end gal1-end gal2-start text2-start img2-start img4-end text4-end gal4-end gal5-start text5-start img5-start] 
+        37vh
+        [gal2-end text2-end img2-end img3-start text3-start gal3-start gal5-end text5-end img5-end img6-start text6-start gal6-start] 
+        37vh
+        [img3-end text3-end gal3-end img6-end text6-end gal6-end] 
+        ;
+        
+    }
+}

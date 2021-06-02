@@ -1,0 +1,67 @@
+html {
+  font-family: var(--main-font);
+  color: var(--black);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--header-font);
+  margin: 0;
+  font-weight: 500;
+}
+h2 {
+  color: var(--brown);
+  font-size: 1.2rem;
+}
+h3 {
+  color: var(--brown);
+  font-size: calc(10px + 2vw);
+}
+h4 {
+  color: var(--brown);
+  font-size: calc(10px + 1vw);
+}
+
+
+.text-primary {
+  color: var(--primary);
+}
+.text-secondary {
+  color: var(--brown);
+}
+
+.text-grey {
+  color: var(--grey);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+.line-height-sm {
+  line-height: 0.9rem;
+}
+.text-sm {
+  font-size: 0.75em;
+}
+.text-md {
+  font-size: 0.9em;
+}
+.text-lg {
+  font-size: 1.2em;
+}
+.text-xl {
+  font-size: 2.5em;
+}
+.text-weight {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+  
+}

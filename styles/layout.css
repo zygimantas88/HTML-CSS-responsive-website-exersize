@@ -1,0 +1,23 @@
+/* display */
+
+.d-grid {
+  display: grid;
+}
+.d-none {
+  display: none;
+}
+.d-flex {
+  display: flex;
+}
+
+
+/*  floats */
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+

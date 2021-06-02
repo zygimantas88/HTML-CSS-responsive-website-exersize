@@ -1,0 +1,22 @@
+.form-control {
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 10px 30px var(--shadow);
+  font-family: var(--main-font);
+  color: var(--black);
+}
+
+.form-control:focus {
+  outline: none;
+  box-shadow: 0 10px 30px var(--shadow), inset 0 0 0 2px var(--primary);
+}
+
+select.form-control {
+  appearance: none;
+}
+
+textarea.form-control {
+  resize: vertical;
+  min-height: 150px;
+}

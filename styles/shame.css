@@ -1,0 +1,4 @@
+.navbar-fix {
+  padding-top: var(--navbar-height);
+  margin-top: calc(-1 * var(--navbar-height));
+}

@@ -1,0 +1,245 @@
+.box-shadow {
+    box-shadow: 0 1px 1px var(--shadow);
+}
+.fit-img {
+    height: 100%;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+   
+}
+
+.text-rotate {
+    display: inline-block;
+    transform: rotate(-90deg);
+    width: 95px;
+    align-items: center;
+    position: absolute;
+}
+.price-tag {
+    display: inline;
+    color: var(--black);
+  }
+  
+  .gal1, .gal2, .gal3, .gal4, .gal5, .gal6,
+  .price-button {
+    display: none;
+}
+
+  @media screen and (min-width: 768px) {
+    .box-shadow {
+        box-shadow: none;
+    }
+   
+   .btn1, .btn2, .btn3, .btn4, .btn5, .btn6,
+   .img4, .img5, .img6,
+   .text4, .text5, .text6,
+   .gal4, .gal5, .gal6,
+   .card4-text, .card5-text, .card6-text{
+        display: none;
+    }
+
+    .gal1, .gal2, .gal3,
+    .price-button {
+        display: initial;
+    }
+
+    .card1-img {
+        content: url(../../img/sink/sink-main.png);
+    }
+    .home__cards-container__card1-text,
+    .home__cards-container__card2-text,
+    .home__cards-container__card3-text
+    
+    {
+        display: flex;
+        flex-direction: column;
+        padding: 25px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+       
+    }
+    .home__cards-container__card1-text__prgrph__header,
+    .home__cards-container__card2-text__prgrph__header,
+    .home__cards-container__card3-text__prgrph__header
+    {
+        margin: 0;
+    }
+
+    .home__cards-container__card1-text__prgrph__description,
+    .home__cards-container__card2-text__prgrph__description,
+    .home__cards-container__card3-text__prgrph__description
+     {
+        font-size: 0.9rem;
+        line-height: 1.2rem;
+        margin-top: calc(1px + 1vw);
+        margin-bottom: calc(5px + 1vw);
+    
+    }
+    .home__cards-container__card1-text__price-container,
+    .home__cards-container__card2-text__price-container,
+    .home__cards-container__card3-text__price-container  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+    .home__cards-container__card1-text__price-container-price,
+    .home__cards-container__card2-text__price-container-price,
+    .home__cards-container__card3-text__price-container-price {
+        font-size: calc(0.5rem + 1vw);
+    }
+    .price-tag {
+        font-size: calc(0.7rem + 1vw);
+    }
+
+    .home__cards-container__gal1__gallery-box,
+    .home__cards-container__gal2__gallery-box,
+    .home__cards-container__gal3__gallery-box
+     {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+      }
+      .home__cards-container__gal1__gallery-box img,
+      .home__cards-container__gal2__gallery-box img,
+      .home__cards-container__gal3__gallery-box img {
+          height: 33%;
+          object-position: center;
+          object-fit: cover;
+      }
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    .img1, .gal2, .text2, .img3 {
+        margin-bottom: 20px;
+
+    }
+
+    .img4, .img5, .img6,
+    .text4, .text5, .text6,
+    .gal4, .gal5, .gal6,
+    .card4-text, .card5-text, .card6-text{
+        display: initial;
+    }
+    .home__cards-container__card1-text,
+    .home__cards-container__card2-text,
+    .home__cards-container__card3-text,
+    .home__cards-container__card4-text,
+    .home__cards-container__card5-text,
+    .home__cards-container__card6-text
+     {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        align-items: center;
+        text-align: center;
+        justify-content: space-between;
+    }
+    .home__cards-container__card1-text__prgrph__header,
+    .home__cards-container__card2-text__prgrph__header,
+    .home__cards-container__card3-text__prgrph__header,
+    .home__cards-container__card4-text__prgrph__header,
+    .home__cards-container__card5-text__prgrph__header,
+    .home__cards-container__card6-text__prgrph__header {
+        font-size: 1.8rem;
+        margin: 0;
+    }
+    .home__cards-container__card1-text__prgrph__description,
+    .home__cards-container__card2-text__prgrph__description,
+    .home__cards-container__card3-text__prgrph__description,
+    .home__cards-container__card4-text__prgrph__description,
+    .home__cards-container__card5-text__prgrph__description,
+    .home__cards-container__card6-text__prgrph__description {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        margin-top: calc(0.2rem + 1vw);
+        margin-bottom: calc(0.8rem + 1vw);
+    
+    }
+    .home__cards-container__card1-text__price-container,
+    .home__cards-container__card2-text__price-container,
+    .home__cards-container__card3-text__price-container,
+    .home__cards-container__card4-text__price-container,
+    .home__cards-container__card5-text__price-container,
+    .home__cards-container__card6-text__price-container  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+    }
+    .home__cards-container__card1-text__price-container-price,
+    .home__cards-container__card2-text__price-container-price,
+    .home__cards-container__card3-text__price-container-price,
+    .home__cards-container__card4-text__price-container-price,
+    .home__cards-container__card5-text__price-container-price,
+    .home__cards-container__card6-text__price-container-price {
+        font-size: calc(0.3rem + 1vw);
+    }
+    .price-tag {
+        font-size: calc(0.5rem + 1vw);
+    }
+    
+    
+    .home__cards-container__gal4__gallery-box,
+    .home__cards-container__gal5__gallery-box,
+    .home__cards-container__gal6__gallery-box
+     {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+
+      }
+      .home__cards-container__gal4__gallery-box img,
+      .home__cards-container__gal5__gallery-box img,
+      .home__cards-container__gal6__gallery-box img {
+          height: 33%;
+          object-position: center;
+          object-fit: cover;
+      }
+
+      .card4-img {
+        content: url(../../img/lights/lamp2.jpg);
+    }
+    .card5-img {
+        content: url(../../img/chair/chr1.jpg);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    .home__cards-container__card1-text__price-container-price,
+    .home__cards-container__card2-text__price-container-price,
+    .home__cards-container__card3-text__price-container-price,
+    .home__cards-container__card4-text__price-container-price,
+    .home__cards-container__card5-text__price-container-price,
+    .home__cards-container__card6-text__price-container-price {
+        font-size: calc(1px + 1vw);
+    }
+    .price-tag {
+        font-size: calc(4px + 1vw);
+    }
+    .home__cards-container__card1-text__price-container,
+    .home__cards-container__card2-text__price-container,
+    .home__cards-container__card3-text__price-container,
+    .home__cards-container__card4-text__price-container,
+    .home__cards-container__card5-text__price-container,
+    .home__cards-container__card6-text__price-container  {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 75%;
+    }
+    .img4, .gal5, .img6 {
+        margin-left: 2px;
+    }
+    .img1, .gal2, .text2, .img3 {
+        margin-bottom: 0;
+
+    }
+  }
+

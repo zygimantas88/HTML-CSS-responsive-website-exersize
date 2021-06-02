@@ -1,0 +1,129 @@
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: var(--navbar-height);
+  padding: 0.5rem 0;
+  z-index: 5;
+  background-color: var(--white-trans);
+}
+
+.navbar .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  height: 65%;
+}
+
+.navbar__toggler {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  width: calc(var(--navbar-height) - 1rem);
+  height: calc(var(--navbar-height) - 1rem);
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.navbar__toggler.active>.navbar__toggler__line {
+  display: none;
+}
+
+.navbar__toggler.active:after {
+  display: inline-block;
+  height: calc(var(--navbar-height) - 1rem);
+  line-height: calc(var(--navbar-height) - 1rem);
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  content: '✕';
+}
+
+.navbar__toggler__line {
+  height: 2px;
+  background: var(--black);
+}
+
+@media screen and (min-width: 576px) {
+  .navbar__toggler {
+    display: none;
+  }
+
+}
+/*  Menu */
+
+.menu {
+  display: none;
+  padding: 0.5rem 1rem;
+  position: fixed;
+  top: var(--navbar-height);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--white-trans);
+}
+
+.menu.active {
+  display: block;
+}
+
+.menu__link-container {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__link-container__link>a {
+  display: block;
+  color: var(--primary);
+  font-size: 1.1rem;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  padding: 0.5rem 0;
+}
+
+.menu__link-container__link:hover>a {
+  color: var(--primary-hover);
+  text-decoration: underline;
+}
+
+.menu__link-container__separator {
+  height: 1px;
+  background-color: var(--shadow);
+}
+
+@media screen and (min-width: 576px) {
+  .menu {
+    display: block;
+    position: static;
+    padding: 0;
+    background-color: initial;
+  }
+  .menu__link-container {
+    flex-direction: row;
+    height: calc(var(--navbar-height) - 1rem);
+  }
+  .menu__link-container__separator {
+    height: initial;
+    background-color: initial;
+  }
+  .menu__link-container__separator:after {
+    content: '|';
+    margin: 0 0.3rem;
+    color: var(--shadow);
+    line-height: calc(var(--navbar-height) - 1rem);
+  }
+  .menu__link-container__link>a {
+    height: 100%;
+    line-height: calc(var(--navbar-height) - 1rem);
+    padding: 0;
+  }
+}

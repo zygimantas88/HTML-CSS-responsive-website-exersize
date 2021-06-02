@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekto sablonas</title>
+  <script src="https://kit.fontawesome.com/b792df0853.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/animation-fix.css">
+  <link rel="stylesheet" href="styles/variables.css">
+  <link rel="stylesheet" href="styles/typography.css">
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/buttons.css">
+  <link rel="stylesheet" href="styles/containers.css">
+  <link rel="stylesheet" href="styles/flex.css">
+  <link rel="stylesheet" href="styles/spacing.css">
+  <link rel="stylesheet" href="styles/inputs.css">
+  <link rel="stylesheet" href="styles/layout.css">
+  <link rel="stylesheet" href="styles/shame.css">
+
+  <link rel="stylesheet" href="styles/sections/navbar.css">
+  <link rel="stylesheet" href="styles/sections/banner.css">
+  <link rel="stylesheet" href="styles/sections/home.css">
+  <link rel="stylesheet" href="styles/sections/footer.css">
+  <link rel="stylesheet" href="styles/sections/aside.css">
+  <link rel="stylesheet" href="styles/grid.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+
+<body class="animation-fix">
+
+  <header class="navbar">
+    <div class="container">
+      <img src="img/logo/logo2.png" alt="codeAcademy logo" class="navbar__logo">
+      <div class="navbar__toggler" id="navbar-toggler">
+        <div class="navbar__toggler__line"></div>
+        <div class="navbar__toggler__line"></div>
+        <div class="navbar__toggler__line"></div>
+      </div>
+      <nav class="menu" id="navbar-menu">
+        <ul class="menu__link-container">
+          <li class="menu__link-container__link"><a href="#home">Home</a></li>
+          <li class="menu__link-container__separator"></li>
+          <li class="menu__link-container__link"><a href="#about-us">About us</a></li>
+          <li class="menu__link-container__separator"></li>
+          <li class="menu__link-container__link"><a href="#shop">Shop</a></li>
+          <li class="menu__link-container__separator"></li>
+          <li class="menu__link-container__link"><a href="#contacts">Contacts</a></li>
+          <li class="menu__link-container__separator"></li>
+          <li class="menu__link-container__link"><a href="#"><i class="fas fa-search"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="main-banner">
+      <h1 class="main-banner-header">Concrete in design</h1>
+      <img class="main-banner-img"  src="img/dUntitled-1-1.png" alt="home decor urban design from concrete">
+    </section>
+
+    <section id="home" class="home pt-4">
+        <article class="home__cards-container page-grid">
+
+          <!-- card1 -->
+           <div class="home__cards-container__card1-button d-flex justify-space-center align-items-center btn1 btn box-shadow">
+             <span class="text-rotate">ADD TO CART</span>
+           </div>
+           <div class="home__cards-container__img1 img1 d-grid box-shadow">
+             <img class="card1-img fit-img" src="img/sink/sink-blue.png" alt="">
+           </div>
+           <div class="home__cards-container__card1-text card1-text text1 box-shadow px-2">
+              <div class="home__cards-container__card1-text__prgrph">
+                <h2 class="home__cards-container__card1-text__prgrph__header mt-2 ml-2">Arc Vessel</h2>
+                <p class="home__cards-container__card1-text__prgrph__description text-sm my-2 line-height-sm">Meticulously handcrafted in Burleigh Heads, Queensland, Concrete Nation basins and baths are a work of art.</p>
+              </div>
+              <div class="home__cards-container__card1-text__price-container">
+                <p class="home__cards-container__card1-text__price-container-price text-secondary text-md text-weight my-2 "><span class="price-tag">Price: </span>799,00 &euro;</p>
+                <div class="home__cards-container__card1-text__price-container-button price-button btn btn--lg">ADD TO CART</div>
+              </div>
+           </div>
+           <div class="home__cards-container__gal1 gal1 box-shadow">
+             <div class="home__cards-container__gal1__gallery-box ">
+                <img class="home__cards-container__gal1__gallery-box__picture-1" src="img/sink/sink-blue.png" alt="sink picture blue">
+                <img class="home__cards-container__gal1__gallery-box__picture-2 " src="img/sink/sink-red.png" alt="sink picture red">
+                <img class="home__cards-container__gal1__gallery-box__picture-3" src="img/sink/sink-white.png" alt="sink picture white">
+             </div>
+           </div>
+
+          <!-- card2 -->
+           <div class="home__cards-container__card2-button d-flex justify-space-center align-items-center btn2 btn box-shadow">
+            <span class="text-rotate">ADD TO CART</span>
+          </div>
+          <div class="home__cards-container__img2 img2 d-grid box-shadow">
+            <img class="card2-img fit-img" src="img/wall-decor/wall1.jpg" alt="">
+          </div>
+          <div class="home__cards-container__card2-text card2-text text2 box-shadow px-2">
+             <div class="home__cards-container__card2-text__prgrph">
+               <h2 class="home__cards-container__card2-text__prgrph__header mt-2 ml-2">Hexagon</h2>
+               <p class="home__cards-container__card2-text__prgrph__description text-sm my-2 line-height-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In, ea maxime porro aliquid quis odit.</p>
+             </div>
+             <div class="home__cards-container__card2-text__price-container">
+               <p class="home__cards-container__card2-text__price-container-price text-secondary text-md text-weight my-2 "><span class="price-tag">Price: </span>149,00 &euro;</p>
+               <div class="home__cards-container__card2-text__price-container-button price-button btn btn--lg">ADD TO CART</div>
+             </div>
+          </div>
+          <div class="home__cards-container__gal2 gal2 box-shadow">
+            <div class="home__cards-container__gal2__gallery-box ">
+               <img class="home__cards-container__gal2__gallery-box__picture-1" src="img/wall-decor/wall2.jpg" alt="sink picture blue">
+               <img class="home__cards-container__gal2__gallery-box__picture-2 " src="img/wall-decor/wall3.jpg" alt="sink picture red">
+               <img class="home__cards-container__gal2__gallery-box__picture-3" src="img/wall-decor/wall4.jpg" alt="sink picture white">
+            </div>
+          </div>
+
+          <!-- card3 -->
+          <div class="home__cards-container__card3-button d-flex justify-space-center align-items-center btn3 btn box-shadow">
+            <span class="text-rotate">ADD TO CART</span>
+          </div>
+          <div class="home__cards-container__img3 img3 d-grid box-shadow">
+            <img class="card3-img fit-img" src="img/bath/bath-red.png" alt="">
+          </div>
+          <div class="home__cards-container__card3-text card3-text text3 box-shadow px-2">
+             <div class="home__cards-container__card3-text__prgrph">
+               <h2 class="home__cards-container__card3-text__prgrph__header mt-2 ml-2">Valencia</h2>
+               <p class="home__cards-container__card3-text__prgrph__description text-sm my-2 line-height-sm">Meticulously handcrafted in Burleigh Heads, Queensland, Concrete Nation basins and baths are a work of art.</p>
+             </div>
+             <div class="home__cards-container__card3-text__price-container">
+               <p class="home__cards-container__card3-text__price-container-price text-secondary text-md text-weight my-2 "><span class="price-tag">Price: </span>4599,00 &euro;</p>
+               <div class="home__cards-container__card3-text__price-container-button price-button btn btn--lg">ADD TO CART</div>
+             </div>
+          </div>
+          <div class="home__cards-container__gal3 gal3 box-shadow">
+            <div class="home__cards-container__gal3__gallery-box ">
+               <img class="home__cards-container__gal3__gallery-box__picture-1" src="img/bath/bath-blue.jpg" alt="sink picture blue">
+               <img class="home__cards-container__gal3__gallery-box__picture-2 " src="img/bath/bath-white.png" alt="sink picture red">
+               <img class="home__cards-container__gal3__gallery-box__picture-3" src="img/bath/bath-grey.png" alt="sink picture white">
+            </div>
+          </div>
+
+          <!-- card4 -->
+            <div class="home__cards-container__card4-button d-flex justify-space-center align-items-center btn4 btn box-shadow">
+              <span class="text-rotate">ADD TO CART</span>
+            </div>
+            <div class="home__cards-container__img4 img4 d-grid box-shadow">
+              <img class="card4-img fit-img" src="img/lights/lamp2.jpg" alt="">
+            </div>
+            <div class="home__cards-container__card4-text card4-text text4 box-shadow px-2">
+               <div class="home__cards-container__card4-text__prgrph">
+                 <h2 class="home__cards-container__card4-text__prgrph__header mt-2 ml-2">Pendant lamp</h2>
+                 <p class="home__cards-container__card4-text__prgrph__description text-sm my-2 line-height-sm">The toughness and roughness of concrete are brought to the rugged aesthetics of this deceptively elegant pendant lamp.</p>
+               </div>
+               <div class="home__cards-container__card4-text__price-container">
+                 <p class="home__cards-container__card4-text__price-container-price text-secondary text-md text-weight my-2 "><span class="price-tag">Price: </span>799,00 &euro;</p>
+                 <div class="home__cards-container__card4-text__price-container-button price-button btn btn--lg d-none">ADD TO CART</div>
+               </div>
+            </div>
+            <div class="home__cards-container__gal4 gal4 box-shadow">
+              <div class="home__cards-container__gal4__gallery-box ">
+                 <img class="home__cards-container__gal4__gallery-box__picture-1" src="img/lights/lamp2.jpg" alt="sink picture blue">
+                 <img class="home__cards-container__gal4__gallery-box__picture-2 " src="img/lights/lamp3.jpg" alt="sink picture red">
+                 <img class="home__cards-container__gal4__gallery-box__picture-3" src="img/lights/lamp4.jpg" alt="sink picture white">
+              </div>
+            </div>
+
+            <!-- card5 -->
+            <div class="home__cards-container__card5-button d-flex justify-space-center align-items-center btn5 btn box-shadow">
+              <span class="text-rotate">ADD TO CART</span>
+            </div>
+            <div class="home__cards-container__img5 img5 d-grid box-shadow">
+              <img class="card5-img fit-img" src="img/chair/chr2-square.jpg" alt="">
+            </div>
+            <div class="home__cards-container__card5-text card5-text text5 box-shadow px-2">
+               <div class="home__cards-container__card5-text__prgrph">
+                 <h2 class="home__cards-container__card5-text__prgrph__header mt-2 ml-2">Concrete chair</h2>
+                 <p class="home__cards-container__card5-text__prgrph__description text-sm my-2 line-height-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, facere nulla quis ratione eaque voluptas!</p>
+               </div>
+               <div class="home__cards-container__card5-text__price-container">
+                 <p class="home__cards-container__card5-text__price-container-price text-secondary text-md text-weight my-2 "><span class="price-tag">Price: </span>2399,00 &euro;</p>
+                 <div class="home__cards-container__card5-text__price-container-button price-button btn btn--lg d-none">ADD TO CART</div>
+               </div>
+            </div>
+            <div class="home__cards-container__gal5 gal5 box-shadow">
+              <div class="home__cards-container__gal5__gallery-box ">
+                 <img class="home__cards-container__gal5__gallery-box__picture-1" src="img/chair/chr2.jpg" alt="sink picture blue">
+                 <img class="home__cards-container__gal5__gallery-box__picture-2 " src="img/chair/chr3.jpg" alt="sink picture red">
+                 <img class="home__cards-container__gal5__gallery-box__picture-3" src="img/chair/chr5.jpg" alt="sink picture white">
+              </div>
+            </div>
+
+          <!-- card6 -->
+            
+          <div class="home__cards-container__card6-button d-flex justify-space-center align-items-center btn6 btn box-shadow">
+            <span class="text-rotate">ADD TO CART</span>
+          </div>
+          <div class="home__cards-container__img6 img6 d-grid box-shadow">
+            <img class="card6-img fit-img" src="img/switches/sw5.jpg" alt="">
+          </div>
+          <div class="home__cards-container__card6-text card6-text text6 box-shadow px-2">
+            <div class="home__cards-container__card6-text__prgrph">
+              <h2 class="home__cards-container__card6-text__prgrph__header mt-2 ml-2">Switch / sockets</h2>
+              <p class="home__cards-container__card6-text__prgrph__description text-sm my-2 line-height-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, facere nulla quis ratione eaque voluptas!</p>
+            </div>
+            <div class="home__cards-container__card6-text__price-container">
+              <p class="home__cards-container__card6-text__price-container-price text-secondary text-md text-weight my-2 "><span class="price-tag">Price: </span>79,00 &euro;</p>
+              <div class="home__cards-container__card6-text__price-container-button price-button btn btn--lg d-none">ADD TO CART</div>
+            </div>
+          </div>
+          <div class="home__cards-container__gal6 gal6 box-shadow">
+            <div class="home__cards-container__gal6__gallery-box ">
+              <img class="home__cards-container__gal6__gallery-box__picture-1" src="img/switches/sw4.webp" alt="sink picture blue">
+              <img class="home__cards-container__gal6__gallery-box__picture-2 " src="img/switches/sw1.jpg" alt="sink picture red">
+              <img class="home__cards-container__gal6__gallery-box__picture-3" src="img/switches/sw3.webp" alt="sink picture white">
+            </div>
+        </article>
+    </section>
+
+    <aside id="shop" class="more-products">
+      <h3 class="more-products__header text-center mt-4">More products</h3>
+      <div class="more-products__container">
+        <div class="more-products__container__cards">
+          <a class="more-products__container__cards-card1" href="#">
+            <img src="img/lights/pend1.jpg" alt="pendant-picture">
+            <h4>Pendants</h4>
+            <div class="btn btn--xs my-2">Details</div>
+          </a>
+        </div>
+
+        <div class="more-products__container__cards">
+          <a class="more-products__container__cards-card2" href="#">
+            <img src="img/blank/bl3.png" alt="blank-picture">
+            <h4>Blank</h4>
+            <div class="btn btn--xs my-2">Details</div>
+          </a>
+        </div>
+
+        <div class="more-products__container__cards">
+          <a class="more-products__container__cards-card3" href="#">
+            <img src="img/chess/Side-Veiw-of-the-Fortify-Concrete-Chess-Set-by-Daniel-Skotak.jpg" alt="chess-picture">
+            <h4>Chess</h4>
+            <div class="btn btn--xs my-2">Details</div>
+          </a>
+        </div>
+
+        <div class="more-products__container__cards">
+          <a class="more-products__container__cards-card4" href="#">
+            <img src="img/lights/tube3.jpg" alt="tube-picture">
+            <h4>Tube</h4>
+            <div class="btn btn--xs my-2">Details</div>
+          </a>
+        </div>
+
+        <div class="more-products__container__cards card5">
+          <a class="more-products__container__cards-card5" href="#">
+            <img src="img/lights/img2.jpg" alt="lights-picture">
+            <h4>Lights</h4>
+            <div class="btn btn--xs my-2">Details</div>
+          </a>
+        </div>
+
+        <div class="more-products__container__cards card6">
+          <a class="more-products__container__cards-card6" href="#">
+            <img src="img/tiles/IMG_7853.jpg" alt="tiles-picture">
+            <h4>Pendants</h4>
+            <div class="btn btn--xs my-2">Details</div>
+          </a>
+        </div>
+
+      </div>
+
+
+    </aside>
+
+    <footer id="contacts" class="footer-area pt-3">
+      <div class="footer-area__container text-sm px-4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam reiciendis itaque consequatur laborum, dignissimos quos?</p>
+        <div class="footer-area__container__media-links my-2">
+          <a class="mx-3" href="https://facebook.com"><img class="fb-logo" src="img/logo/034-facebook-1.svg" alt=""></a>
+          <a class="mx-3" href="https://instagram.com"><img  class="fb-instagram" src="img/logo/036-instagram-2.svg" alt=""></a>
+          <a class="mx-3" href="https://pinterest.com"><img class="fb-pinterest" src="img/logo/035-pinterest-social-logo.svg" alt=""></i></a>
+          
+        </div>
+      </div>
+    </footer>
+  </main>
+
+
+
+ 
+  <script src="js/navbarMenu.js"></script>
+  <script src="js/animationPrevent.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+
+
+/* justify-content */
+
+.justify-space-between {
+  justify-content: space-between;
+}
+
+.justify-space-around {
+  justify-content: space-around;
+}
+
+.justify-space-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-space-center {
+  justify-content: center;
+}
+
+.justify-space-end {
+  justify-content: flex-end;
+}
+
+/* align-items*/
+
+.align-items-center {
+  align-items: center;
+}
+
+/* flex-direction */
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+/* align-self */
+
+.align-self-start {
+  align-self: flex-start;
+}
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-center {
+  align-self: center;
+}
+
+.align-self-stretch {
+  align-self: stretch;
+  /* default */
+}
+
+@media screen and (min-width: 576px) {
+  .d-sm-flex {
+    display: flex;
+  }
+
+  .flex-sm-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .align-self-sm-start{
+    align-self: start;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .d-md-flex {
+    display: flex;
+  }
+}
